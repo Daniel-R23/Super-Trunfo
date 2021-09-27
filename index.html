@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super Trunfo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-super-trunfo.png" class="page-logo" alt="">
+    <h1 class="page-title">Super Trunfo</h1>
+    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+  </header>
+  <main>
+    <section id="primeira">
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Avatar</th>
+            <th>Vitórias</th>
+            <th>Empates</th>
+            <th>Derrotas</th>
+            <th>Pontos</th>
+            <th>Vez</th>
+          </tr>
+        </thead>
+        <tbody id="tabelaJogadores"></tbody>
+      </table>
+      <div class="botoes">
+        <button id="adicionar" onclick="adicionarJogador()">+</button>
+        <button onclick="zerarPontos()" id="zerar">Limpar</button>
+      </div>
+    </section>
+    <section>
+      <div class="botoes">
+        <button onclick="sortearCarta()" id="btnSortear">Sortear carta</button>
+      </div>
+      <h2>Escolha o seu atributo</h2>
+      <div class="wrapper">
+        <div id="carta-jogador" class="cartas">
+          <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png">
+        </div>
+        <div id="carta-maquina" class="cartas">
+          <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png">
+        </div>
+      </div>
+      <div class="botoes">
+        <button class="button-jogar" type="button" id="btnJogar" onclick="jogar()" disabled="true">Jogar</button>
+      </div>
+      <div id="resultado">
+        <div></div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Desenvolvido por Daniel Rodrigues</p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
