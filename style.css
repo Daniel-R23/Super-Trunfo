@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Kaushan Script", monospace;
+  background-image: url("https://image.freepik.com/fotos-gratis/bege-envelhecido-fundo_53876-88685.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  font-size: 20px;
+}
+header {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.page-logo {
+  width: 100px;
+  filter: invert(1);
+}
+.page-title {
+  color: #2b1103;
+}
+.alura-logo {
+  width: 50px;
+  filter: invert(1);
+}
+#primeira {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+table {
+  width: 90%;
+  border: 1px solid silver;
+  border-collapse: collapse;
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.1rem;
+}
+th {
+  height: 10vh;
+  color: #decebc;
+  background-color: #543111;
+}
+tr {
+  height: 7vh;
+  color: #2b1103;
+}
+tr:nth-child(even) {
+  background-color: #bd8c5d;
+}
+tr:nth-child(odd) {
+  background-color: #dfcfc0;
+}
+td {
+  text-align: center;
+}
+td > img {
+  width: 50px;
+}
+.botoes {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.botoes > button {
+  padding: 10px 25px;
+  margin: 10px;
+  border: none;
+  outline: none;
+  background-color: #d60e0e;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: 0.4s ease;
+  font-size: 0.9rem;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bold;
+}
+#adicionar {
+  position: absolute;
+  top: 10vh;
+  font-size: 2rem;
+  padding: 0px 15px 2px 15px;
+  border-radius: 50px;
+  left: 4vw;
+}
+#zerar {
+  right: 2vw;
+  position: absolute;
+  top: 10vh;
+  background-color: transparent;
+  color: #d60e0e;
+  box-shadow: none;
+}
+.botoes > button:hover {
+  transform: scale(1.05);
+  background-color: #ba0e0e;
+}
+h2 {
+  text-align: center;
+  font-size: 1.9rem;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  color: #2b1103;
+}
+.wrapper {
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.cartas {
+  width: 40vw;
+  height: 60vw;
+  overflow: auto;
+  position: relative;
+  background-size: 35vw 26vw;
+  background-repeat: no-repeat;
+  background-position-x: 2vw;
+  background-position-y: 6vw;
+}
+.cartas > img {
+  width: 100%;
+}
+#opcoes {
+  position: absolute;
+  margin-top: -22vw;
+  margin-left: 3.3vw;
+}
+#opcoes > input {
+  display: none;
+}
+#opcoes > label,
+p[name="atributo"] {
+  cursor: pointer;
+  background-color: #edd493;
+  color: #543111;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bold;
+  font-size: 0.9rem;
+  width: 33.3vw;
+  display: block;
+  border-bottom: 1px solid #543111;
+  padding-top: 0.8vw;
+  padding-bottom: 0.8vw;
+  border-radius: 0px 10px 10px 0px;
+}
+#opcoes > input:checked + label {
+  font-weight: bold;
+  color: #d60e0e;
+}
+h3 {
+  position: absolute;
+  top: 3vw;
+  left: 5vw;
+  font-size: 0.9rem;
+  color: #543111;
+}
+#btnJogar {
+  font-size: 1rem;
+}
+footer > p {
+  font-size: 0.9rem;
+}
+#trofeu {
+  width: 30px;
+}
+#resultado {
+  width: 100vw;
+  padding: 80px;
+  background-color: #543111f9;
+  position: absolute;
+  top: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  animation: fadeInOut 3s linear;
+}
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  30%,
+  80% {
+    opacity: 1;
+  }
+}
+#resultado > p {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+}
+#resultado.show {
+  display: block;
+}
+button[disabled],
+button[disabled]:hover {
+  background-color: #000;
+  transform:none;
+}
